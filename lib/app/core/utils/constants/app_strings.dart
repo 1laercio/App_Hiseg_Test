@@ -2,9 +2,12 @@
 const kAppName = 'Hiseg';
 
 ///LOGIN
+const kWelcome ="Bem Vindo";
 const kLogin = "Login";
+const kCpf = "CPF";
 const kUserCPF = "Informe seu CPF";
-const kPassword = "Informe sua senha";
+const kInsertpassword = "Informe sua senha";
+const kPassword = "Senha";
 
 ///LOCALIZATION
 const kPermission = "Conceder autorização de acesso á localização ?";
