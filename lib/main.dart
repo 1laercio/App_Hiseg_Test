@@ -2,7 +2,6 @@ import 'package:app_hiseg_test/app/modules/login_page/login_page.dart';
 import 'package:flutter/material.dart';
 
 import 'app/core/utils/constants/app_strings.dart';
-import 'app/core/utils/style/colors/general_colors.dart';
 
 void main() {
   runApp(const MyApp());

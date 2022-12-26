@@ -2,7 +2,7 @@
 const kAppName = 'Hiseg';
 
 ///LOGIN
-const kWelcome ="Bem Vindo";
+const kWelcome = "Bem Vindo";
 const kLogin = "Login";
 const kCpf = "CPF";
 const kUserCPF = "Informe seu CPF";
@@ -23,3 +23,4 @@ const kUserType = "Tipo de Usuário:";
 const kSave = "Salvar";
 const kCancel = "Cancelar";
 const kSaveAlert = "Deseja realmente salvar as alterações no Usuário?";
+const kUsers = "Usuários";

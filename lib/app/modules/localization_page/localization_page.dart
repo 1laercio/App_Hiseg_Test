@@ -2,6 +2,7 @@ import 'package:app_hiseg_test/app/core/components/button_widget.dart';
 import 'package:app_hiseg_test/app/core/utils/constants/app_strings.dart';
 import 'package:app_hiseg_test/app/core/utils/style/colors/general_colors.dart';
 import 'package:app_hiseg_test/app/core/utils/style/themes/text_styles.dart';
+import 'package:app_hiseg_test/app/modules/home_page/home_page.dart';
 import 'package:flutter/material.dart';
 
 class LocatizationPage extends StatelessWidget {
@@ -15,7 +16,7 @@ class LocatizationPage extends StatelessWidget {
           Padding(
             padding:
                 const EdgeInsets.only(top: 30, bottom: 15, left: 20, right: 20),
-            child: Container(
+            child: SizedBox(
               height: MediaQuery.of(context).size.height * 0.4,
               child: Image.asset(
                 'assets/localization/maps.png',
@@ -45,6 +46,13 @@ class LocatizationPage extends StatelessWidget {
                 height: 50,
                 width: 100,
                 style: TextStyles.button(),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const HomePage()),
+                  );
+                },
               ),
             ],
           )
