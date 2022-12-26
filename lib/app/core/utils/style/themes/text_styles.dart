@@ -48,7 +48,7 @@ class TextStyles {
     return GoogleFonts.notoSerif(
       color: color ?? kColorPrimary,
       fontWeight: fontWeight ?? FontWeight.w500,
-      fontSize: 10,
+      fontSize: 12,
       letterSpacing: 0.1,
     );
   }
@@ -75,7 +75,7 @@ class TextStyles {
   ///Método que retorna estilização de texto correspondente ao **Button**.
   static TextStyle button({Color? color, FontWeight? fontWeight}) {
     return GoogleFonts.notoSerif(
-      color: color ?? kColorPrimary,
+      color: color ?? kColorTextButton,
       fontWeight: fontWeight ?? FontWeight.bold,
       fontSize: 18,
       letterSpacing: 0.04,

@@ -23,7 +23,7 @@ class ButtonWidegt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 20),
+      padding: const EdgeInsets.only(top: 20,right: 20,left: 20),
       child: TextButton(
         onPressed: onPressed,
         style: TextButton.styleFrom(

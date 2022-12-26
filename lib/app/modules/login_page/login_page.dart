@@ -5,6 +5,8 @@ import 'package:app_hiseg_test/app/core/utils/style/colors/general_colors.dart';
 import 'package:app_hiseg_test/app/core/utils/style/themes/text_styles.dart';
 import 'package:flutter/material.dart';
 
+import '../localization_page/localization_page.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -20,7 +22,7 @@ class LoginPage extends StatelessWidget {
         ),
       ),
       Padding(
-        padding: const EdgeInsets.only(bottom: 25,left: 25),
+        padding: const EdgeInsets.only(bottom: 25, left: 25),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -42,12 +44,17 @@ class LoginPage extends StatelessWidget {
         subtitle: kInsertpassword,
       ),
       ButtonWidegt(
-        title: kLogin,
-        background: kColorBackgroundUser,
-        height: 50,
-        width: 200,
-        style: TextStyles.button(color: Colors.white),
-      )
+          title: kLogin,
+          background: kColorBackgroundUser,
+          height: 50,
+          width: 200,
+          style: TextStyles.button(),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const LocatizationPage()),
+            );
+          })
     ]));
   }
 }
