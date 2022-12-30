@@ -2,8 +2,10 @@ import 'package:app_hiseg_test/app/core/components/button_widget.dart';
 import 'package:app_hiseg_test/app/core/utils/constants/app_strings.dart';
 import 'package:app_hiseg_test/app/core/utils/style/colors/general_colors.dart';
 import 'package:app_hiseg_test/app/core/utils/style/themes/text_styles.dart';
-import 'package:app_hiseg_test/app/modules/home_page/home_page.dart';
+
 import 'package:flutter/material.dart';
+
+import '../home_page/home_page.dart';
 
 class LocatizationPage extends StatelessWidget {
   const LocatizationPage({super.key});

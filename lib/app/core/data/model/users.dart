@@ -9,18 +9,18 @@ String usersToJson(List<Users> data) =>
 class Users {
   Users(
       {this.id,
-      required this.name,
-      required this.localization,
-      required this.age,
-      required this.cpf,
-      required this.password,
+      this.name,
+      this.localization,
+      this.age,
+      this.cpf,
+      this.password,
       this.tipeUser});
 
   int? id;
-  String name;
-  String localization;
-  String age;
-  int? cpf;
+  String? name;
+  String? localization;
+  String? age;
+  String? cpf;
   String? password;
   String? tipeUser;
 
@@ -47,7 +47,7 @@ class Users {
           {int? id,
           String? title,
           String? content,
-          int? cpf,
+          String? cpf,
           String? password,
           String? tipeUser}) =>
       Users(
