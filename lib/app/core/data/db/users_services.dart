@@ -19,7 +19,7 @@ class UsersService extends ChangeNotifier {
         password: "123456",
         tipeUser: "L");
     await save(users);
-    await getAll();
+    await getAll(users);
 
     return this;
   }
@@ -44,7 +44,7 @@ class UsersService extends ChangeNotifier {
   }
 
   // recuperar todas as notas
-  Future<List<Users>> getAll() async {
+  Future<List<Users>> getAll(Users users) async {
     final result = await db.rawQuery('SELECT * FROM users ORDER BY id');
     print(result);
     return result.map((json) => Users.fromJson(json)).toList();
